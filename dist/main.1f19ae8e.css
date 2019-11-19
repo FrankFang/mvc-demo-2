@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+body{
+  overflow: hidden;
+}
+body > .page{
+  display: flex;
+  flex-wrap: wrap;
+}
+body > .page > section{
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid grey;
+}
+
+#app1 {
+  width: 50vw;
+  height: 50vh;
+}
+#app1 .output {
+}
+#app1 .actions {
+}
+
+#app2 {
+}
+#app2 .tab-bar {
+  display: flex;
+}
+#app2 .tab-bar > li {
+  border: 1px solid grey;
+  width: 50%;
+}
+#app2 .tab-bar > li.selected {
+  background: rgb(253, 221, 155);
+  color: white;
+}
+#app2 .tab-content {
+}
+#app2 .tab-content > li {
+  display: none;
+}
+#app2 .tab-content > li.active {
+  display: block;
+}
+
+#app3 {
+  
+}
+#app3 .square{
+  border: 1px solid grey;
+  margin-top: 10vw;
+  margin-left: 10vw;
+  width: 10vw;
+  height: 10vw;
+  transition: transform 1s;
+}
+#app3 .square.active{
+  transform:translateX(15vw);
+}
+#app4 {
+}
+@keyframes change {
+  0% {
+    background: red;
+  }
+  100% {
+    background: blue;
+  }
+}
+#app4 .circle {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+#app4 .circle.active{
+  animation: change 1s infinite alternate linear;
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
